@@ -76,6 +76,13 @@ func TestDecrementError(t *testing.T) {
 	}
 }
 
+func TestDecrementAssignError(t *testing.T) {
+	rect := mustRect(t, 0, 0, 1, 1)
+	if err := rect.DecrementAssign(); err != task1.ErrNonPositiveSize {
+		t.Fatalf("expected ErrNonPositiveSize, got %v", err)
+	}
+}
+
 func TestUnionAndIntersection(t *testing.T) {
 	a := mustRect(t, 0, 0, 3, 3)
 	b := mustRect(t, 2, 2, 4, 4)
@@ -90,6 +97,13 @@ func TestUnionAndIntersection(t *testing.T) {
 	expected := mustRect(t, 2, 2, 3, 3)
 	if !expected.Equal(intersection) {
 		t.Fatalf("expected %v, got %v", expected, intersection)
+	}
+}
+
+func TestStringFormat(t *testing.T) {
+	rect := mustRect(t, -1, -2, 3, 4)
+	if rect.String() != "[(-1,-2),(3,4)]" {
+		t.Fatalf("unexpected string output: %s", rect.String())
 	}
 }
 

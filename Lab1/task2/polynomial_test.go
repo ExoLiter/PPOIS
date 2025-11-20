@@ -110,6 +110,37 @@ func TestEqual(t *testing.T) {
 	}
 }
 
+func TestCloneAndIndependence(t *testing.T) {
+	original := task2.New([]float64{1, 0.5})
+	cloned := original.Clone()
+	if !original.Equal(cloned) {
+		t.Fatal("clone should be equal to original")
+	}
+	cloned.AddAssign(task2.New([]float64{1}))
+	if original.Equal(cloned) {
+		t.Fatal("expected clone mutation not to affect original")
+	}
+}
+
+func TestEqualWithTolerance(t *testing.T) {
+	a := task2.New([]float64{1.0000000001})
+	b := task2.New([]float64{1.0})
+	if !a.Equal(b) {
+		t.Fatal("expected polynomials to be equal within tolerance")
+	}
+}
+
+func TestDivideAssignWithRemainder(t *testing.T) {
+	dividend := task2.New([]float64{1, 0, 1}) // x^2 + 1
+	divisor := task2.New([]float64{-1, 1})    // x - 1
+	remainder, err := dividend.DivideAssign(divisor)
+	if err != nil {
+		t.Fatalf("unexpected error: %v", err)
+	}
+	compareCoeffs(t, dividend.Coefficients(), []float64{1, 1}) // quotient x + 1
+	compareCoeffs(t, remainder.Coefficients(), []float64{2})
+}
+
 func compareCoeffs(t *testing.T, got, want []float64) {
 	t.Helper()
 	if len(got) != len(want) {
