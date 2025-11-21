@@ -1,0 +1,66 @@
+Lab2 structures (fields methods -> associations)
+communication.EmailNotifier 2 2 -> (none)
+storage.MemoryStorage 2 2 -> (none)
+errors.BudgetExceededError 1 1 -> (none)
+errors.CurrencyMismatchError 2 1 -> (none)
+errors.EmailNotActiveError 1 1 -> (none)
+errors.InventoryShortageError 1 1 -> (none)
+errors.OrderValidationError 1 1 -> (none)
+errors.PermissionDeniedError 1 1 -> (none)
+errors.RouteNotFoundError 1 1 -> (none)
+errors.SupplierContractError 1 1 -> (none)
+errors.TaskStatusError 1 1 -> (none)
+errors.TeamCapacityError 1 1 -> (none)
+errors.TransactionDeclinedError 1 1 -> (none)
+errors.VehicleOverweightError 1 1 -> (none)
+finance.AccountingDepartment 3 2 -> BankAccount, Transaction, Budget
+finance.Transaction 5 2 -> BankAccount, CurrencyConverter
+finance.CurrencyConverter 2 2 -> Currency
+finance.Currency 3 2 -> (none)
+finance.BankAccount 4 2 -> Currency
+finance.Budget 4 2 -> (none)
+finance.Receipt 3 2 -> (none)
+hr.Employee 7 4 -> EmailAccount, Permission, EmployeeTask, Status
+hr.Status 3 3 -> (none)
+hr.Permission 3 2 -> (none)
+hr.EmailAccount 3 3 -> (none)
+hr.EmployeeTask 3 2 -> Status
+hr.HRDepartment 3 2 -> IDGenerator, Employee, Permission
+hr.Team 3 2 -> Employee
+hr.IDGenerator 3 2 -> (none)
+marketing.Country 3 2 -> (none)
+marketing.Advertisement 3 2 -> (none)
+marketing.AdvertisingChannel 3 2 -> Advertisement
+marketing.CampaignReport 3 3 -> (none)
+marketing.MarketingCampaign 5 2 -> Budget, Country, AdvertisingChannel
+marketing.MarketingDepartment 2 2 -> MarketingCampaign, Budget
+logistics.Warehouse 5 2 -> Country, Cargo
+logistics.Cargo 4 2 -> Material, Product
+logistics.Material 3 2 -> (none)
+logistics.Product 3 2 -> Material
+logistics.Carrier 3 2 -> Vehicle, Shipment
+logistics.Route 3 2 -> (none)
+logistics.VehicleType 3 2 -> (none)
+logistics.Vehicle 3 2 -> VehicleType, Cargo
+logistics.Shipment 4 2 -> Cargo, Route, Vehicle
+logistics.LogisticsCenter 4 2 -> Country, Route, CargoSortingPlan
+logistics.LogisticsDepartment 4 2 -> Country, LogisticsCenter, Carrier, Shipment
+logistics.CargoSortingPlan 3 3 -> Warehouse, Cargo
+logistics.WeightMap 2 2 -> (none)
+production.Factory 5 3 -> Warehouse, ProductionLine, ProductionPlan, ProductionOrder
+production.ProductionLine 4 2 -> ProductionUnit, ProductionOrder, Product
+production.ProductionOrder 5 2 -> TechnologicalCard, Product
+production.ProductionPlan 3 2 -> ProductionOrder, Material
+production.ProductionUnit 5 2 -> Product, ProductionOrder
+production.TechnologicalCard 3 2 -> Product
+sales.Order 4 2 -> OrderItem, Status, Customer
+sales.OrderItem 3 2 -> Product
+sales.Customer 3 2 -> Order, EmailAccount
+sales.Delivery 4 2 -> Order, Route
+sales.Invoice 3 2 -> Order
+sales.Contract 3 2 -> Supplier
+sales.PurchaseOrder 4 2 -> Supplier, Material, Product
+sales.Supplier 4 2 -> Country, Material, Product
+sales.ProcurementDepartment 4 2 -> Supplier, Contract, PurchaseOrder, Material
+sales.SalesDepartment 7 5 -> Order, Customer, Invoice, Delivery, OrderItem, Storage, Notifier
+Totals: fields=196, methods=126, associations=84, exceptions=12

@@ -1,0 +1,63 @@
+Lab3 structures (fields methods -> associations)
+apperrors.AccessError 2 3 -> (none)
+apperrors.DataIntegrityError 2 3 -> (none)
+apperrors.ApprovalMissingError 2 3 -> (none)
+apperrors.InvalidCurrencyError 1 3 -> (none)
+apperrors.InsufficientBalanceError 3 3 -> (none)
+apperrors.UnauthenticatedActionError 1 3 -> (none)
+apperrors.InconsistentStateError 2 3 -> (none)
+apperrors.DuplicateEmployeeError 1 3 -> (none)
+apperrors.ScheduleConflictError 2 3 -> (none)
+apperrors.PayrollLockError 2 3 -> (none)
+apperrors.PolicyViolationError 2 3 -> (none)
+apperrors.OvertimeLimitError 3 3 -> (none)
+benefits.BenefitPlan 5 3 -> (none)
+benefits.BenefitEnrollment 4 3 -> BenefitPlan
+benefits.BenefitStatement 3 3 -> BenefitPlan
+benefits.InsuranceClaim 6 3 -> BenefitEnrollment
+benefits.ReimbursementRequest 5 3 -> (none)
+communication.ReminderSchedule 4 4 -> (none)
+communication.NotificationPreference 4 3 -> (none)
+communication.AlertSubscription 4 3 -> (none)
+communication.EmailTemplate 4 3 -> (none)
+communication.MessageSender 3 2 -> (none)
+compliance.AuditLog 4 3 -> (none)
+compliance.AccessReview 4 3 -> (none)
+compliance.IncidentReport 5 2 -> (none)
+compliance.RiskAssessment 4 2 -> (none)
+compliance.PolicyDocument 3 3 -> (none)
+finance.Currency 3 2 -> (none)
+finance.LedgerEntry 5 2 -> BankAccount
+finance.ExchangeRateTable 3 3 -> Currency
+finance.BankAccount 5 4 -> Currency
+finance.PaymentInstruction 5 3 -> Currency, BankAccount
+finance.TransactionBatch 4 4 -> LedgerEntry
+hr.Employee 7 4 -> Position, Contract
+hr.AccessBadge 5 3 -> (none)
+hr.Contract 6 2 -> (none)
+hr.Permission 3 3 -> (none)
+hr.Position 3 2 -> (none)
+hr.Schedule 4 3 -> (none)
+payroll.OvertimePolicy 4 3 -> (none)
+payroll.SalaryBand 4 2 -> (none)
+payroll.Paycheck 5 4 -> PayComponent
+payroll.PayComponent 4 3 -> (none)
+payroll.PayrollRun 5 4 -> Employee, PayCalendar, PayComponent
+payroll.PayCalendar 3 2 -> (none)
+payroll.Deduction 3 2 -> (none)
+payroll.Bonus 3 3 -> (none)
+performance.TrainingCourse 4 3 -> (none)
+performance.PromotionCase 5 3 -> Employee, Position
+performance.PerformanceGoal 5 2 -> (none)
+performance.PerformanceReview 5 3 -> (none)
+performance.Certification 4 3 -> (none)
+reporting.PayrollReport 4 3 -> (none)
+reporting.HeadcountReport 2 3 -> (none)
+reporting.ComplianceReport 3 2 -> (none)
+reporting.BenefitsReport 3 2 -> (none)
+timeoff.LeaveRequest 5 3 -> LeavePolicy
+timeoff.LeaveAccrual 3 3 -> LeaveBalance
+timeoff.LeavePolicy 4 3 -> (none)
+timeoff.LeaveApproval 4 2 -> LeaveRequest
+timeoff.LeaveBalance 4 3 -> LeavePolicy
+Totals: fields=224, methods=175, associations=21, exceptions=12
