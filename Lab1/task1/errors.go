@@ -2,10 +2,9 @@ package task1
 
 import "errors"
 
-// Error constants shared across rectangle operations.
 var (
-	ErrInvalidRectangle = errors.New("task1: rectangle requires positive width and height")
-	ErrNonPositiveSize  = errors.New("task1: width and height must remain positive")
+	ErrInvalidRectangle = errors.New("Rectangle requires positive width and height")
+	ErrNonPositiveSize  = errors.New("Width and height must remain positive")
 )
 
 func orderPair(a, b int) (int, int) {

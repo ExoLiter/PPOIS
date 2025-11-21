@@ -1,6 +1,6 @@
 package pizzeria
 
-import logistics "lab2/pizzeria/logistics"
+import "lab2/pizzeria/logistics"
 
 type (
 	Warehouse           = logistics.Warehouse
