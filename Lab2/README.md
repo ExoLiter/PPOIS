@@ -1,6 +1,6 @@
 ﻿# Lab2 – Pizza Enterprise Domain
 
-Лабораторная работа по варианту «Пиццерия». Код организован по доменным подпакетам (`errors`, `hr`, `finance`, `marketing`, `logistics`, `production`, `sales`), в каждом файле объявлена ровно одна структура и связанные методы. Пакет `pizzeria` экспортирует типы из подпакетов, поэтому тесты и внешние клиенты продолжают работать через один импорт.
+Лабораторная работа по варианту «Пиццерия». Код организован по доменным подпакетам (`communication`, `errors`, `hr`, `finance`, `marketing`, `logistics`, `production`,  `sales`, `storage`), в каждом файле объявлена ровно одна структура и связанные методы. Пакет `pizzeria` экспортирует типы из подпакетов, поэтому тесты и внешние клиенты продолжают работать через один импорт.
 
 ## Как запустить тесты и покрытие
 
@@ -13,8 +13,8 @@ go test ./... -cover
 
 ```bash
 cd Lab2
-go test ./... -coverpkg=./... -coverprofile=coverage
-go tool cover -func=coverage
+go test ./... -coverpkg=./... -coverprofile=coverage.out
+go tool cover -func=coverage.out
 ```
 
 ## Сводка по классам
