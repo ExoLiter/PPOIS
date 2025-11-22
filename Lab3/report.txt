@@ -60,4 +60,5 @@ timeoff.LeaveAccrual 3 3 -> LeaveBalance
 timeoff.LeavePolicy 4 3 -> (none)
 timeoff.LeaveApproval 4 2 -> LeaveRequest
 timeoff.LeaveBalance 4 3 -> LeavePolicy
-Totals: fields=224, methods=175, associations=21, exceptions=12
+
+Totals: fields=224, methods=175, associations=30, exceptions=12
