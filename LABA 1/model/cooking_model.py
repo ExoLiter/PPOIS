@@ -1,11 +1,13 @@
-from cooking.entities import Eggs, Oil, Pan, Seasoning, Spatula, Stove
-from cooking.exceptions import InvalidOperationError
+"""Shared application model used by CLI and GUI."""
+
+from model.entities import Eggs, Oil, Pan, Seasoning, Spatula, Stove
+from model.exceptions import InvalidOperationError
 
 
-class CookingProcess:
+class CookingModel:
     def __init__(
         self,
-        eggs: Eggs | None = None,
+        eggs: Eggs | None = None, 
         pan: Pan | None = None,
         oil: Oil | None = None,
         seasoning: Seasoning | None = None,
@@ -42,7 +44,8 @@ class CookingProcess:
         self.frying_result, self.recommended_range = self.stove.evaluate_cooking()
         return (
             f"Обжарено яиц: {amount}. "
-            f"Всего обжарено: {self.eggs.fried_count}, сырых осталось: {self.eggs.get_raw_count()}. "
+            f"Всего обжарено: {self.eggs.fried_count}, "
+            f"сырых осталось: {self.eggs.get_raw_count()}. "
             f"Жарка на мощности {self.stove.power} за {self.stove.cook_time_min} мин."
         )
 
@@ -60,9 +63,9 @@ class CookingProcess:
         quality_note = self._build_quality_note()
         seasonings = ", ".join(self.seasoning.added_items)
         return (
-            f"{stir_msg} {serve_msg} "
-            f"Приправы: {seasonings}. "
-            f"Обжарено яиц: {self.eggs.fried_count}, сырых осталось: {self.eggs.get_raw_count()}. "
+            f"{stir_msg} {serve_msg} Приправы: {seasonings}. "
+            f"Обжарено яиц: {self.eggs.fried_count}, "
+            f"сырых осталось: {self.eggs.get_raw_count()}. "
             f"{quality_note}"
         )
 
@@ -72,11 +75,29 @@ class CookingProcess:
         if self.frying_result == "raw":
             return (
                 "Яйца получились сырые. "
-                f"Нужно было жарить {self.recommended_range[0]}-{self.recommended_range[1]} мин."
+                f"Нужно было жарить {self.recommended_range[0]}-"
+                f"{self.recommended_range[1]} мин."
             )
         if self.frying_result == "burned":
             return (
                 "Яйца сгорели. "
-                f"Нужно было жарить {self.recommended_range[0]}-{self.recommended_range[1]} мин."
+                f"Нужно было жарить {self.recommended_range[0]}-"
+                f"{self.recommended_range[1]} мин."
             )
         return "Яйца приготовлены правильно."
+
+    def get_state(self) -> dict[str, str | int | bool | None]:
+        return {
+            "broken_count": self.eggs.broken_count,
+            "fried_count": self.eggs.fried_count,
+            "raw_count": self.eggs.get_raw_count(),
+            "stirred": self.eggs.stirred,
+            "stove_on": self.stove.is_on,
+            "stove_power": self.stove.power,
+            "cook_time_min": self.stove.cook_time_min,
+            "pan_heated": self.pan.heated,
+            "oil_added": self.oil.added,
+            "oil_type": self.oil.oil_type,
+            "seasonings": ", ".join(self.seasoning.added_items),
+            "spatula_used": self.spatula.used,
+        }

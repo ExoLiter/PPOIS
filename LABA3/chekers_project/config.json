@@ -1,0 +1,36 @@
+{
+    "window": { "width": 800, "height": 800, "fps": 60, "title": "Checkers" },
+    "grid": { "rows": 8, "cols": 8, "cell_size": 100 },
+    "colors": {
+        "bg_menu": [40, 40, 40], "text_main": [255, 255, 255], "text_hover": [200, 50, 50],
+        "board_dark": [118, 150, 86], "board_light": [238, 238, 210],
+        "piece_white": [240, 240, 240], "piece_black": [40, 40, 40],
+        "highlight": [255, 215, 0], "king_crown": [255, 215, 0]
+    },
+    "audio": {
+        "music": "assets/music.mp3", "sound_click": "assets/click.wav",
+        "sound_move": "assets/move.wav", "sound_win": "assets/win.wav",
+        "volume": 0.3
+    },
+    "paths": { "records_file": "highscores.json" },
+    "animation": { "speed": 0.15, "flip_speed": 5 },
+    "settings": { "lang": "ru" },
+   "locales": {
+        "ru": {
+            "title": "ШАШКИ", "play": "Начать игру", "records": "Рекорды",
+            "help": "Справка", "settings": "Настройки", "exit": "Выход",
+            "vol": "Громкость: ", "lang_btn": "Язык: RU", "back": "Назад",
+            "white": "Белые", "black": "Черные",
+            "win_msg": "ОДЕРЖАЛИ ПОБЕДУ!", "enter_name": "Введите имя героя:",
+            "rules": "ПРАВИЛА ИГРЫ:\n1. Шашки ходят по диагонали на 1 клетку.\n2. Рубка обязательна (прыжок через врага).\n3. Простая шашка бьет только вперед.\n4. Если шашка доходит до конца доски, она\n   становится ДАМКОЙ (появляется корона).\n5. Дамка может ходить и бить НАЗАД.\n6. Доска переворачивается после хода."
+        },
+        "en": {
+            "title": "CHECKERS", "play": "Play Game", "records": "Highscores",
+            "help": "Help", "settings": "Settings", "exit": "Exit",
+            "vol": "Volume: ", "lang_btn": "Lang: EN", "back": "Back",
+            "white": "White", "black": "Black",
+            "win_msg": "TOOK THE VICTORY!", "enter_name": "Enter hero name:",
+            "rules": "GAME RULES:\n1. Pieces move diagonally 1 square.\n2. Capturing is mandatory.\n3. Normal pieces capture only forward.\n4. Reaching the end of the board makes\n   the piece a KING (crown appears).\n5. Kings can move and capture BACKWARDS.\n6. Board flips smoothly after each turn."
+        }
+    }
+}

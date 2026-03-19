@@ -1,4 +1,6 @@
-from cooking.exceptions import InvalidOperationError
+"""Domain entities for the scrambled eggs cooking process."""
+
+from model.exceptions import InvalidOperationError
 
 
 class Eggs:

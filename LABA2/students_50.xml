@@ -1,0 +1,453 @@
+<?xml version="1.0" ?>
+<students_database>
+  <student>
+    <fio_student>Иванов Алексей</fio_student>
+    <fio_father>Иванов Петр</fio_father>
+    <income_father>85000</income_father>
+    <fio_mother>Иванова Анна</fio_mother>
+    <income_mother>60000</income_mother>
+    <brothers>1</brothers>
+    <sisters>0</sisters>
+  </student>
+  <student>
+    <fio_student>Иванова Мария</fio_student>
+    <fio_father>Иванов Сергей</fio_father>
+    <income_father>120000</income_father>
+    <fio_mother>Иванова Ольга</fio_mother>
+    <income_mother>0</income_mother>
+    <brothers>2</brothers>
+    <sisters>1</sisters>
+  </student>
+  <student>
+    <fio_student>Иванов Дмитрий</fio_student>
+    <fio_father>Иванов Андрей</fio_father>
+    <income_father>45000</income_father>
+    <fio_mother>Иванова Елена</fio_mother>
+    <income_mother>55000</income_mother>
+    <brothers>0</brothers>
+    <sisters>0</sisters>
+  </student>
+  <student>
+    <fio_student>Смирнов Игорь</fio_student>
+    <fio_father>Смирнов Максим</fio_father>
+    <income_father>95000</income_father>
+    <fio_mother>Смирнова Татьяна</fio_mother>
+    <income_mother>80000</income_mother>
+    <brothers>1</brothers>
+    <sisters>2</sisters>
+  </student>
+  <student>
+    <fio_student>Смирнова Дарья</fio_student>
+    <fio_father>Смирнов Олег</fio_father>
+    <income_father>110000</income_father>
+    <fio_mother>Смирнова Наталья</fio_mother>
+    <income_mother>40000</income_mother>
+    <brothers>0</brothers>
+    <sisters>1</sisters>
+  </student>
+  <student>
+    <fio_student>Смирнов Антон</fio_student>
+    <fio_father>Смирнов Виктор</fio_father>
+    <income_father>60000</income_father>
+    <fio_mother>Смирнова Виктория</fio_mother>
+    <income_mother>65000</income_mother>
+    <brothers>3</brothers>
+    <sisters>0</sisters>
+  </student>
+  <student>
+    <fio_student>Кузнецов Павел</fio_student>
+    <fio_father>Кузнецов Илья</fio_father>
+    <income_father>150000</income_father>
+    <fio_mother>Кузнецова Надежда</fio_mother>
+    <income_mother>120000</income_mother>
+    <brothers>0</brothers>
+    <sisters>0</sisters>
+  </student>
+  <student>
+    <fio_student>Кузнецова Екатерина</fio_student>
+    <fio_father>Кузнецов Роман</fio_father>
+    <income_father>75000</income_father>
+    <fio_mother>Кузнецова Светлана</fio_mother>
+    <income_mother>75000</income_mother>
+    <brothers>1</brothers>
+    <sisters>1</sisters>
+  </student>
+  <student>
+    <fio_student>Кузнецов Владимир</fio_student>
+    <fio_father>Кузнецов Денис</fio_father>
+    <income_father>80000</income_father>
+    <fio_mother>Кузнецова Марина</fio_mother>
+    <income_mother>0</income_mother>
+    <brothers>2</brothers>
+    <sisters>0</sisters>
+  </student>
+  <student>
+    <fio_student>Попов Александр</fio_student>
+    <fio_father>Попов Евгений</fio_father>
+    <income_father>90000</income_father>
+    <fio_mother>Попова Галина</fio_mother>
+    <income_mother>45000</income_mother>
+    <brothers>0</brothers>
+    <sisters>3</sisters>
+  </student>
+  <student>
+    <fio_student>Попова Анастасия</fio_student>
+    <fio_father>Попов Борис</fio_father>
+    <income_father>130000</income_father>
+    <fio_mother>Попова Ирина</fio_mother>
+    <income_mother>110000</income_mother>
+    <brothers>1</brothers>
+    <sisters>0</sisters>
+  </student>
+  <student>
+    <fio_student>Попов Михаил</fio_student>
+    <fio_father>Попов Григорий</fio_father>
+    <income_father>55000</income_father>
+    <fio_mother>Попова Любовь</fio_mother>
+    <income_mother>50000</income_mother>
+    <brothers>0</brothers>
+    <sisters>1</sisters>
+  </student>
+  <student>
+    <fio_student>Васильев Степан</fio_student>
+    <fio_father>Васильев Артем</fio_father>
+    <income_father>105000</income_father>
+    <fio_mother>Васильева Маргарита</fio_mother>
+    <income_mother>90000</income_mother>
+    <brothers>2</brothers>
+    <sisters>2</sisters>
+  </student>
+  <student>
+    <fio_student>Васильева Ксения</fio_student>
+    <fio_father>Васильев Леонид</fio_father>
+    <income_father>70000</income_father>
+    <fio_mother>Васильева Полина</fio_mother>
+    <income_mother>85000</income_mother>
+    <brothers>0</brothers>
+    <sisters>0</sisters>
+  </student>
+  <student>
+    <fio_student>Васильев Тимур</fio_student>
+    <fio_father>Васильев Вадим</fio_father>
+    <income_father>65000</income_father>
+    <fio_mother>Васильева Алина</fio_mother>
+    <income_mother>65000</income_mother>
+    <brothers>1</brothers>
+    <sisters>0</sisters>
+  </student>
+  <student>
+    <fio_student>Петров Никита</fio_student>
+    <fio_father>Петров Вячеслав</fio_father>
+    <income_father>140000</income_father>
+    <fio_mother>Петрова Вероника</fio_mother>
+    <income_mother>0</income_mother>
+    <brothers>3</brothers>
+    <sisters>1</sisters>
+  </student>
+  <student>
+    <fio_student>Петрова Юлия</fio_student>
+    <fio_father>Петров Даниил</fio_father>
+    <income_father>88000</income_father>
+    <fio_mother>Петрова Евгения</fio_mother>
+    <income_mother>92000</income_mother>
+    <brothers>0</brothers>
+    <sisters>1</sisters>
+  </student>
+  <student>
+    <fio_student>Петров Егор</fio_student>
+    <fio_father>Петров Руслан</fio_father>
+    <income_father>50000</income_father>
+    <fio_mother>Петрова Алла</fio_mother>
+    <income_mother>48000</income_mother>
+    <brothers>1</brothers>
+    <sisters>2</sisters>
+  </student>
+  <student>
+    <fio_student>Соколов Глеб</fio_student>
+    <fio_father>Соколов Константин</fio_father>
+    <income_father>115000</income_father>
+    <fio_mother>Соколова Жанна</fio_mother>
+    <income_mother>75000</income_mother>
+    <brothers>0</brothers>
+    <sisters>0</sisters>
+  </student>
+  <student>
+    <fio_student>Соколова Валерия</fio_student>
+    <fio_father>Соколов Станислав</fio_father>
+    <income_father>95000</income_father>
+    <fio_mother>Соколова Яна</fio_mother>
+    <income_mother>100000</income_mother>
+    <brothers>2</brothers>
+    <sisters>0</sisters>
+  </student>
+  <student>
+    <fio_student>Соколов Ярослав</fio_student>
+    <fio_father>Соколов Валерий</fio_father>
+    <income_father>60000</income_father>
+    <fio_mother>Соколова Тамара</fio_mother>
+    <income_mother>60000</income_mother>
+    <brothers>1</brothers>
+    <sisters>1</sisters>
+  </student>
+  <student>
+    <fio_student>Михайлов Арсений</fio_student>
+    <fio_father>Михайлов Юрий</fio_father>
+    <income_father>125000</income_father>
+    <fio_mother>Михайлова Людмила</fio_mother>
+    <income_mother>80000</income_mother>
+    <brothers>0</brothers>
+    <sisters>2</sisters>
+  </student>
+  <student>
+    <fio_student>Михайлова Диана</fio_student>
+    <fio_father>Михайлов Анатолий</fio_father>
+    <income_father>70000</income_father>
+    <fio_mother>Михайлова Нина</fio_mother>
+    <income_mother>0</income_mother>
+    <brothers>3</brothers>
+    <sisters>3</sisters>
+  </student>
+  <student>
+    <fio_student>Михайлов Марк</fio_student>
+    <fio_father>Михайлов Федор</fio_father>
+    <income_father>82000</income_father>
+    <fio_mother>Михайлова Валентина</fio_mother>
+    <income_mother>82000</income_mother>
+    <brothers>1</brothers>
+    <sisters>0</sisters>
+  </student>
+  <student>
+    <fio_student>Новиков Макар</fio_student>
+    <fio_father>Новиков Лев</fio_father>
+    <income_father>100000</income_father>
+    <fio_mother>Новикова Лариса</fio_mother>
+    <income_mother>95000</income_mother>
+    <brothers>0</brothers>
+    <sisters>1</sisters>
+  </student>
+  <student>
+    <fio_student>Новикова Ангелина</fio_student>
+    <fio_father>Новиков Богдан</fio_father>
+    <income_father>45000</income_father>
+    <fio_mother>Новикова Вера</fio_mother>
+    <income_mother>50000</income_mother>
+    <brothers>2</brothers>
+    <sisters>0</sisters>
+  </student>
+  <student>
+    <fio_student>Новиков Давид</fio_student>
+    <fio_father>Новиков Тимур</fio_father>
+    <income_father>140000</income_father>
+    <fio_mother>Новикова Алиса</fio_mother>
+    <income_mother>130000</income_mother>
+    <brothers>0</brothers>
+    <sisters>0</sisters>
+  </student>
+  <student>
+    <fio_student>Федоров Матвей</fio_student>
+    <fio_father>Федоров Антон</fio_father>
+    <income_father>78000</income_father>
+    <fio_mother>Федорова София</fio_mother>
+    <income_mother>85000</income_mother>
+    <brothers>1</brothers>
+    <sisters>1</sisters>
+  </student>
+  <student>
+    <fio_student>Федорова Милана</fio_student>
+    <fio_father>Федоров Илья</fio_father>
+    <income_father>92000</income_father>
+    <fio_mother>Федорова Ева</fio_mother>
+    <income_mother>0</income_mother>
+    <brothers>0</brothers>
+    <sisters>2</sisters>
+  </student>
+  <student>
+    <fio_student>Федоров Захар</fio_student>
+    <fio_father>Федоров Владислав</fio_father>
+    <income_father>63000</income_father>
+    <fio_mother>Федорова Полина</fio_mother>
+    <income_mother>68000</income_mother>
+    <brothers>2</brothers>
+    <sisters>0</sisters>
+  </student>
+  <student>
+    <fio_student>Морозов Кирилл</fio_student>
+    <fio_father>Морозов Георгий</fio_father>
+    <income_father>110000</income_father>
+    <fio_mother>Морозова Варвара</fio_mother>
+    <income_mother>105000</income_mother>
+    <brothers>0</brothers>
+    <sisters>1</sisters>
+  </student>
+  <student>
+    <fio_student>Морозова Злата</fio_student>
+    <fio_father>Морозов Эдуард</fio_father>
+    <income_father>85000</income_father>
+    <fio_mother>Морозова Лилия</fio_mother>
+    <income_mother>90000</income_mother>
+    <brothers>1</brothers>
+    <sisters>1</sisters>
+  </student>
+  <student>
+    <fio_student>Морозов Тимур</fio_student>
+    <fio_father>Морозов Артур</fio_father>
+    <income_father>135000</income_father>
+    <fio_mother>Морозова Регина</fio_mother>
+    <income_mother>0</income_mother>
+    <brothers>3</brothers>
+    <sisters>0</sisters>
+  </student>
+  <student>
+    <fio_student>Волков Платон</fio_student>
+    <fio_father>Волков Олег</fio_father>
+    <income_father>50000</income_father>
+    <fio_mother>Волкова Инна</fio_mother>
+    <income_mother>45000</income_mother>
+    <brothers>0</brothers>
+    <sisters>0</sisters>
+  </student>
+  <student>
+    <fio_student>Волкова Кира</fio_student>
+    <fio_father>Волков Вадим</fio_father>
+    <income_father>95000</income_father>
+    <fio_mother>Волкова Арина</fio_mother>
+    <income_mother>85000</income_mother>
+    <brothers>1</brothers>
+    <sisters>2</sisters>
+  </student>
+  <student>
+    <fio_student>Волков Савелий</fio_student>
+    <fio_father>Волков Игорь</fio_father>
+    <income_father>105000</income_father>
+    <fio_mother>Волкова Майя</fio_mother>
+    <income_mother>110000</income_mother>
+    <brothers>0</brothers>
+    <sisters>1</sisters>
+  </student>
+  <student>
+    <fio_student>Алексеев Даниил</fio_student>
+    <fio_father>Алексеев Леонид</fio_father>
+    <income_father>76000</income_father>
+    <fio_mother>Алексеева Олеся</fio_mother>
+    <income_mother>72000</income_mother>
+    <brothers>2</brothers>
+    <sisters>0</sisters>
+  </student>
+  <student>
+    <fio_student>Алексеева Таисия</fio_student>
+    <fio_father>Алексеев Роман</fio_father>
+    <income_father>125000</income_father>
+    <fio_mother>Алексеева Карина</fio_mother>
+    <income_mother>0</income_mother>
+    <brothers>0</brothers>
+    <sisters>3</sisters>
+  </student>
+  <student>
+    <fio_student>Алексеев Илья</fio_student>
+    <fio_father>Алексеев Петр</fio_father>
+    <income_father>68000</income_father>
+    <fio_mother>Алексеева Зоя</fio_mother>
+    <income_mother>65000</income_mother>
+    <brothers>1</brothers>
+    <sisters>1</sisters>
+  </student>
+  <student>
+    <fio_student>Лебедев Артем</fio_student>
+    <fio_father>Лебедев Николай</fio_father>
+    <income_father>145000</income_father>
+    <fio_mother>Лебедева Антонина</fio_mother>
+    <income_mother>100000</income_mother>
+    <brothers>0</brothers>
+    <sisters>0</sisters>
+  </student>
+  <student>
+    <fio_student>Лебедева Алена</fio_student>
+    <fio_father>Лебедев Максим</fio_father>
+    <income_father>88000</income_father>
+    <fio_mother>Лебедева Римма</fio_mother>
+    <income_mother>90000</income_mother>
+    <brothers>2</brothers>
+    <sisters>1</sisters>
+  </student>
+  <student>
+    <fio_student>Лебедев Руслан</fio_student>
+    <fio_father>Лебедев Андрей</fio_father>
+    <income_father>55000</income_father>
+    <fio_mother>Лебедева Дарья</fio_mother>
+    <income_mother>60000</income_mother>
+    <brothers>1</brothers>
+    <sisters>0</sisters>
+  </student>
+  <student>
+    <fio_student>Семенов Денис</fio_student>
+    <fio_father>Семенов Сергей</fio_father>
+    <income_father>98000</income_father>
+    <fio_mother>Семенова Светлана</fio_mother>
+    <income_mother>85000</income_mother>
+    <brothers>0</brothers>
+    <sisters>2</sisters>
+  </student>
+  <student>
+    <fio_student>Семенова Елизавета</fio_student>
+    <fio_father>Семенов Дмитрий</fio_father>
+    <income_father>112000</income_father>
+    <fio_mother>Семенова Наталья</fio_mother>
+    <income_mother>0</income_mother>
+    <brothers>3</brothers>
+    <sisters>0</sisters>
+  </student>
+  <student>
+    <fio_student>Семенов Вячеслав</fio_student>
+    <fio_father>Семенов Алексей</fio_father>
+    <income_father>74000</income_father>
+    <fio_mother>Семенова Ольга</fio_mother>
+    <income_mother>78000</income_mother>
+    <brothers>1</brothers>
+    <sisters>1</sisters>
+  </student>
+  <student>
+    <fio_student>Егоров Богдан</fio_student>
+    <fio_father>Егоров Иван</fio_father>
+    <income_father>130000</income_father>
+    <fio_mother>Егорова Елена</fio_mother>
+    <income_mother>110000</income_mother>
+    <brothers>0</brothers>
+    <sisters>0</sisters>
+  </student>
+  <student>
+    <fio_student>Егорова Алиса</fio_student>
+    <fio_father>Егоров Михаил</fio_father>
+    <income_father>62000</income_father>
+    <fio_mother>Егорова Анна</fio_mother>
+    <income_mother>60000</income_mother>
+    <brothers>2</brothers>
+    <sisters>2</sisters>
+  </student>
+  <student>
+    <fio_student>Егоров Макар</fio_student>
+    <fio_father>Егоров Владимир</fio_father>
+    <income_father>89000</income_father>
+    <fio_mother>Егорова Мария</fio_mother>
+    <income_mother>95000</income_mother>
+    <brothers>1</brothers>
+    <sisters>0</sisters>
+  </student>
+  <student>
+    <fio_student>Павлов Роман</fio_student>
+    <fio_father>Павлов Александр</fio_father>
+    <income_father>150000</income_father>
+    <fio_mother>Павлова Екатерина</fio_mother>
+    <income_mother>140000</income_mother>
+    <brothers>0</brothers>
+    <sisters>1</sisters>
+  </student>
+  <student>
+    <fio_student>Павлова София</fio_student>
+    <fio_father>Павлов Виктор</fio_father>
+    <income_father>40000</income_father>
+    <fio_mother>Павлова Нина</fio_mother>
+    <income_mother>45000</income_mother>
+    <brothers>0</brothers>
+    <sisters>0</sisters>
+  </student>
+</students_database>
